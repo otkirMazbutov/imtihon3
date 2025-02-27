@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archives</title>
+</head>
+<body>
+    <h1>Archives</h1>
+    <ul>
+        {% for archive in archives %}
+            <li>
+                <h2>{{ archive.title }}</h2>
+                <p>{{ archive.description }}</p>
+                <small>{{ archive.published_date }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
